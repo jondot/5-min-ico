@@ -1,0 +1,22 @@
+{
+  "name": "ico-shit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "truffle": "^4.0.6",
+    "zeppelin-solidity": "^1.6.0"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.0.3",
+    "goddamn-javascript-config": "^2.0.0",
+    "solc": "^0.4.19",
+    "web3": "^1.0.0-beta.29"
+  },
+  "scripts": {
+    "deploy": "truffle migrate",
+    "deploy:reset": "yarn clean; truffle migrate --reset",
+    "build": "yarn clean; truffle compile",
+    "clean": "rm -rf build"
+  }
+}
